@@ -48,7 +48,7 @@
 </template>
 
 <script>
-import Home from '../views/About.vue'
+import Home from '../views/Preparation.vue'
 export default {
   // name: "HomeView",
   components: {Home},

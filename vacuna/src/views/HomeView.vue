@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-navigation-drawer v-model="sidebar" app color="#880E4F" dark>
+    <v-navigation-drawer v-model="sidebar" app >
       <v-list>
         <v-btn text v-on:click="admin()">
           <v-icon>mdi-account</v-icon>
@@ -14,7 +14,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar class="margen" color="#880E4F" dark>
+    <v-toolbar class="margen">
       <span class="hidden-sm-and-up">
         <v-app-bar-nav-icon @click="sidebar = !sidebar"> </v-app-bar-nav-icon>
       </span>
@@ -48,25 +48,26 @@
 </template>
 
 <script>
-import Home from '../views/Preparation.vue'
+import Home from '../views/Contact.vue'
 export default {
   // name: "HomeView",
   components: {Home},
   data() {
     return {
-      appTitle: "Pasteleria Candy",
+      appTitle: "Vaccination",
       sidebar: false,
       menuItems: [
-        { title: "Pasteles", path: "/Homepasteles/pastel" },
-        { title: "Crea tu pastel", path: "/Homepasteles/form" },
-        { title: "Acerca de nosotros", path: "/Homepasteles/about" },
+        { title: "Database", path: "#" },
+        { title: "Education", path: "#" },
+        { title: "News", path: "#" },
+        { title: "Regulation", path: "#" },
       ],
     };
   },
   created() {},
   methods: {
      admin() {
-      this.$router.push({ path:"/admin/pedidos"});
+      this.$router.push({ path:"#"});
     },
   },
   mounted() {},

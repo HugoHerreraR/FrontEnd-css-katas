@@ -1,7 +1,8 @@
 <template>
-  <div class="mx-5">
+  <div class="mx-5 mb-15">
     <v-row>
-      <v-card class="" max-width="444" elevation="0">
+      <v-col cols="12" md="6" sm="6">
+      <v-card class="mx-auto" max-width="444" elevation="0">
         <v-card-title class="cardTitulo" style="font-size: 33px">
           Why should I vaccine
         </v-card-title>
@@ -13,6 +14,7 @@
           </span>
         </v-card-subtitle>
       </v-card>
+      </v-col>
     </v-row>
     <v-row>
       <v-col cols="12" sm="6" xs="12" md="3">
@@ -96,26 +98,6 @@
   </div>
 </template>
 
-<style>
-.cardTitulo {
-  margin-bottom: 23px;
-}
-.cardSub {
-  margin-bottom: 30px;
-}
-.txt{
-  font-size: 24px;
-}
-.txtSub{
-  font-size: 29px;
-}
-.txtCard{
-  font-size: 16px;
-}
-.icon{
-  margin-bottom: 20px;
-}
-.cardForm{
-  height: 270px;
-}
+<style scoped>
+ @import '../assets/css/why.css'
 </style>

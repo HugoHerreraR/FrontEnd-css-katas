@@ -2,9 +2,6 @@
   <div>
     <v-navigation-drawer v-model="sidebar" app >
       <v-list>
-        <v-btn text v-on:click="admin()">
-          <v-icon>mdi-account</v-icon>
-        </v-btn>
         <v-list-item
           v-for="item in menuItems"
           :key="item.title"
@@ -33,13 +30,13 @@
         >
           {{ item.title }}
         </v-btn>
-        <v-btn text v-on:click="admin()">  
-          <v-icon>mdi-account</v-icon>
-        </v-btn>
       </v-toolbar-items>
     </v-toolbar>
     <div>
       <Home></Home>
+      <why></why>
+      <Preparation></Preparation>
+      <Contact></Contact>
       <!-- <transition>
         <router-view></router-view>
       </transition> -->
@@ -48,10 +45,14 @@
 </template>
 
 <script>
-import Home from '../views/Contact.vue'
+import Home from '../views/Home.vue'
+import why from '../views/Why.vue'
+import Preparation from '../views/Preparation.vue'
+import Contact from '../views/Contact.vue'
+
 export default {
   // name: "HomeView",
-  components: {Home},
+  components: {Home, why, Preparation,Contact},
   data() {
     return {
       appTitle: "Vaccination",

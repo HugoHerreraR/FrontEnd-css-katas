@@ -2,13 +2,13 @@
   <v-container fill-height fluid>
     <v-row align="center" justify="center">
       <v-col cols="12" md="6" sm="6">
-        <v-card class="mx-auto" max-width="700" max-height="900">
+        <v-card class="mx-auto" max-width="700" max-height="900" elevation="0">
           <v-img
-            lazy-src="https://picsum.photos/id/11/10/6"
+            
             max-height="800"
             max-width="700"
             contain
-            src="https://eresmama.com/wp-content/uploads/2016/09/medico-perinatologo.jpg"
+            v-bind:src="require('../assets/img/imgv2.jpg')"
           ></v-img>
         </v-card>
       </v-col>
@@ -161,14 +161,6 @@
   </v-container>
 </template>
 
-<style>
-.cardTitulo {
-  margin-bottom: 23px;
-}
-.cardSub {
-  margin-bottom: 23px;
-}
-.txt {
-  font-size: 20px;
-}
+<style scoped>
+@import '../assets/css/preparation.css'
 </style>

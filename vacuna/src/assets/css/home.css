@@ -1,0 +1,22 @@
+/* estilos card */
+.cardTitulo {
+    margin-bottom: 23px;
+  }
+.cardSub {
+    margin-bottom: 30px;
+  }
+.cardAction {
+    margin-bottom: 145px;
+  }
+.txt {
+    font-size: 20px;
+    color: #424242;
+  }
+.txtTitle{
+    font-size: 33px;
+    color: #1F3E72;  
+}
+.txtAction{
+    color: #1F3E72;  
+}
+

@@ -1,8 +1,8 @@
 <template>
 <div>
-  <v-container fill-height fluid>
+  <v-container fill-height fluid class="mb-15">
     <v-row align="center" justify="center">
-      <v-col cols="12" md="6" sm="6">
+      <v-col cols="12" md="6" sm="12">
         <v-row>
           <v-card class="mx-5" max-width="600" elevation="0">
             <v-card-title class="cardTitulo" style="font-size: 33px">
@@ -109,7 +109,7 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col cols="12" md="6" sm="6">
+      <v-col cols="12" md="6" sm="12">
         <v-card class="mx-auto" max-width="700" max-height="900" elevation="0">
           <v-img
             max-height="800"
